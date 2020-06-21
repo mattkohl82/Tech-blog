@@ -6,37 +6,40 @@ body, html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  color: rgb(238, 116, 116);
-  background-color: #fab977;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  background-color: #afabab;
 }
 
 body {
-  background-image: url(280f04d0fb835243c9a49ee9f017e54d.jpg);
+  background-image: url(futuretech.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
+  opacity: 0.8;
 }
 
 p {
-  color: #cf5a2c;
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
-  color: #cf5a2c;
+  color: #000000;
   font-weight: bold;
   transition: color .1s;
+  text-shadow: 1px 1px #ffffff;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
 }
 
 button {
-  background-color: #cf5a2c;
+  background-color: #ffffff;
   border: 0;
   padding: 1%;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -44,7 +47,8 @@ button {
 }
 
 button:hover {
-  background-color: #cf5a2c;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .post-list {
@@ -55,12 +59,12 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #cf5a2c;
+  border: 1px solid #ffffff;
 }
 
 textarea {
@@ -76,26 +80,18 @@ form label {
   display: block;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
 
 header {
-  border-bottom: 1px solid #eedcd1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  background-color: #f6ebe9;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #ffffff;
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 3em;
 }
 
 main {
@@ -109,7 +105,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #cf5a2c;
+  color: #ffffff;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -117,16 +113,18 @@ main {
 }
 
 .btn-no-style:hover {
-  background: none;
-  color: #cf5a2c;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .post {
@@ -137,7 +135,7 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: #ffffff;
 }
 
 .edit-link {
@@ -146,12 +144,14 @@ main {
 }
 
 .upvote-btn {
-  background-color: #197d0f;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-  background-color: #1f9c13;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .comment-form {
@@ -164,7 +164,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #000000;
 }
 
 .comment .meta {
@@ -178,11 +178,11 @@ main {
 }
 
 .submit-btn {
-  color: wheat;
+  color: rgb(0, 0, 0);
 }
 
 .upvote-btn {
-  color: wheat;
+  color: rgb(0, 0, 0);
 }
 
 .new-post-form input {
@@ -194,17 +194,20 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #ffffff;
+  text-align: center;
 }
 
 .post {
   margin: auto;
   justify-content: center;
-  background-color: #f6ebe9;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff;
   border-radius: 10px;
   opacity: 80%;
 }
