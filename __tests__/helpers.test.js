@@ -1,4 +1,3 @@
-  
 const {format_date} = require('../utils/helpers');
 
 // creating test to that format_date() takes Date() objects and returns dates in MM/DD/YYYY

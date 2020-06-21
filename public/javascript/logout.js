@@ -12,3 +12,4 @@ async function logout() {
 }
 
 document.querySelector('#logout').addEventListener('click', logout);
+© 2020 GitHub, Inc.
