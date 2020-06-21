@@ -2,20 +2,25 @@
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
+
+html {
   padding: 0;
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(255, 255, 255);
   background-color: #afabab;
+  position: relative;
 }
 
 body {
-  background-image: url(futuretech.jpg);
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  opacity: 0.8;
+  background: url(futuretech.jpg);
+  opacity: .8;
+  background-size: cover;
+
+}
+
+.main-body {
+  min-height: 100vh;
 }
 
 p {
@@ -36,7 +41,7 @@ a:hover {
 }
 
 button {
-  background-color: #ffffff;
+  background-color:rgba(255, 255, 255, 0.6);;
   border: 0;
   padding: 1%;
   color: rgb(0, 0, 0);
@@ -47,13 +52,14 @@ button {
 }
 
 button:hover {
-  background-color: #000000;
+  background-color:rgb(0, 0, 0, .6);
   color: rgb(255, 255, 255);
 }
 
 .post-list {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 textarea, input {
@@ -113,17 +119,17 @@ main {
 }
 
 .btn-no-style:hover {
-  background-color: #000000;
+  background-color:rgb(0, 0, 0, .6);
   color: rgb(255, 255, 255);
 }
 
 .delete-post-btn {
-  background-color: #ffffff;
+  background-color:rgba(255, 255, 255, 0.6);
   color: rgb(0, 0, 0);
 }
 
 .delete-post-btn:hover {
-  background-color: #000000;
+  background-color:rgb(0, 0, 0, .6);
   color: rgb(255, 255, 255);
 }
 
@@ -135,7 +141,7 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #ffffff;
+  color: #ff0000;
 }
 
 .edit-link {
@@ -144,13 +150,13 @@ main {
 }
 
 .upvote-btn {
-  background-color: #ffffff;
+  background-color:rgba(255, 255, 255, 0.6);
   color: rgb(0, 0, 0);
   transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-  background-color: #000000;
+  background-color:rgb(0, 0, 0, .6);
   color: rgb(255, 255, 255);
 }
 
@@ -158,13 +164,19 @@ main {
   margin-bottom: 5%;
 }
 
+
+
 .comment {
   padding: 1%;
   margin-bottom: 1%;
+  background-color:rgba(255, 255, 255, 0.6);
+  color: rgb(0, 0, 0);
+  width: 100vw;
 }
 
 .comment:nth-child(odd) {
-  background-color: #000000;
+  background-color:rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 .comment .meta {
@@ -175,6 +187,7 @@ main {
 
 #comment-body {
   opacity: 80%;
+  color: rgb(0, 0, 0);
 }
 
 .submit-btn {
@@ -185,29 +198,109 @@ main {
   color: rgb(0, 0, 0);
 }
 
+h2,
+label,
+li
+{
+  color: white;
+}
+
 .new-post-form input {
   width: 300px;
 }
 
+.edit-title {
+  color: white;
+}
+
 .edit-post-form {
   margin-bottom: 5%;
+  color: white;
+}
+
+.edit-post-form a {
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+}
+
+.edit-post-form a:hover{
+  color: #000000;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.btn {
+  color: #000000;
+  background-color:rgba(255, 255, 255, 0.6);
+}
+
+.btn:hover{
+  color: #ffffff;
+  background-color:rgb(0, 0, 0, .6);
 }
 
 footer {
-  position: fixed;
-  left: 0;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   border-top: 1px solid #ffffff;
-  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+}
+
+footer h3 {
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+}
+
+footer a {
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+}
+
+footer a:hover{
+  color: #000000;
+  text-shadow: 1px 1px #ffffff;
 }
 
 .post {
   margin: auto;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(3, 0, 0);
   border: 1px solid #ffffff;
-  border-radius: 10px;
   opacity: 80%;
 }
+
+.post p {
+  color: black;
+}
+
+.post a{
+  color: #000000;
+  text-shadow: 3px 3px #ffffff;
+
+}
+
+.card a:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+
+}
+
+.meta a {
+  color: #000000;
+  text-shadow: 1px 1px #ffffff;
+
+}
+
+.meta a:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+
+}
+
+.card {
+  opacity: 100%;
+}
+
+
