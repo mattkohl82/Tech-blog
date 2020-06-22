@@ -41,8 +41,12 @@ Post.init(
        allowNull: false
      },
      post_url: {
-       type: DataTypes.STRING,
+       type: DataTypes.TEXT,
        allowNull: false,
+       validate: {
+        len: [1]
+    }
+       
       
      },
      user_id: {
