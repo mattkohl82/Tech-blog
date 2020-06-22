@@ -36,12 +36,6 @@ router.get('/:id', (req, res) => {
                attributes: ['title']
             }
          }
-      //   {
-      //     model: Post,
-      //     attributes: ['title'],
-      //     through: Vote,
-      //     as: 'voted_posts'
-      //   }
       ]
     })
       .then(dbUserData => {
@@ -59,7 +53,6 @@ router.get('/:id', (req, res) => {
 
 // POST /api/users
 router.post('/', (req, res) => {
-   // expects {username: 'Feuerbacher', email: 'feuerbacherb@gmail.com', password: 'password1234'}
    User.create({
       username: req.body.username,
       email: req.body.email,
@@ -123,9 +116,6 @@ router.post('/login', (req, res) => {
 
 // PUT /api/users/1
 router.put('/:id', withAuth, (req, res) => {
-   // expects {username: 'Feuerbacher', email: 'feuerbacherb@gmail.com', password: 'password1234'}
-
-   // if req.body has exact key/value pairs to match the model, you can just use the `req.body` instead
    User.update(req.body, {
       individualHooks: true,
       where: {
